@@ -7,7 +7,16 @@
         :style="{
           backgroundImage: `url('${slider.image}');background-size:cover;background-repeat: no-repeat;background-position: center;`,
         }"
-        class="h-96 flex justify-center content-center text-right px-5 text-white rounded-md"
+        class="
+          h-96
+          flex
+          justify-center
+          content-center
+          text-right
+          px-5
+          text-white
+          rounded-md
+        "
       >
         <div class="w-96 ml-auto">
           <h1 class="text-2xl font-normal mt-10 my-3">

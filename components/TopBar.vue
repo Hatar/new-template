@@ -1,12 +1,28 @@
 <template>
-  <div class="flex flex-col bg-gray-200 h-10">
+  <div class="flex flex-col bg-gray-200 h-18">
     <nav
-      class="container mx-auto flex flex-col lg:flex-row items-center flex-shrink-0"
+      class="
+        container
+        mx-auto
+        flex flex-col
+        lg:flex-row
+        md:items-center
+        flex-shrink-0
+      "
     >
-      <div class="flex justify-between items-center lg:mr-32">
+      <div class="flex justify-between items-center lg:mr-32 p-3 md:p-0">
         <span class="text-white text-xl">Social Media Sharing Links</span>
         <button
-          class="border border-white px-2 py-1 rounded text-white opacity-50 hover:opacity-75 lg:hidden"
+          class="
+            border border-white
+            px-2
+            py-1
+            rounded
+            text-white
+            opacity-50
+            hover:opacity-75
+            lg:hidden
+          "
           id="navbar-toggle"
           @click="toggleMenu"
         >
@@ -16,7 +32,12 @@
       <div class="hidden lg:flex flex-grow" id="navbar-collapse">
         <div class="flex my-3 lg:my-0">
           <ul
-            class="flex flex-col mt-3 mb-1 lg:flex-row lg:mx-auto lg:mt-0 lg:mb-0"
+            class="
+              flex flex-col
+              mt-3
+              mb-1
+              lg:flex-row lg:mx-auto lg:mt-0 lg:mb-0
+            "
           >
             <li>
               <a href="#" class="block text-gray-400 py-2 md:mx-2">Login</a>
@@ -28,7 +49,12 @@
         </div>
         <div class="flex my-3 lg:my-0">
           <ul
-            class="flex flex-col mt-3 mb-1 lg:flex-row lg:mx-auto lg:mt-0 lg:mb-0"
+            class="
+              flex flex-col
+              mt-3
+              mb-1
+              lg:flex-row lg:mx-auto lg:mt-0 lg:mb-0
+            "
           >
             <li>
               <a

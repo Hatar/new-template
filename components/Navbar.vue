@@ -1,12 +1,7 @@
 <template>
-  <div class="nav flex flex-wrap items-center justify-between py-10">
-    <div
-      class="flex flex-no-shrink items-center text-center mr-6 py-3 text-grey-darkest"
-    >
-      <h1 class="font-semibold tracking-tight">Logo</h1>
-    </div>
-    <div class="flex flex-col">
-      <!-- <div class="border rounded overflow-hidden flex w-40">
+  <div>
+    <div class="font-sans flex items-center justify-end mt-10 p-2 md:p-0">
+      <div class="border rounded overflow-hidden flex">
         <input type="text" class="px-4 py-2" placeholder="Search..." />
         <button class="flex items-center justify-center px-4">
           <svg
@@ -20,54 +15,102 @@
             />
           </svg>
         </button>
-      </div> -->
+      </div>
+    </div>
+    <div
+      class="nav flex flex-wrap items-center justify-between py-5 p-2 md:p-0"
+    >
+      <div
+        class="
+          flex flex-no-shrink
+          items-center
+          justify-center
+          py-3
+          text-grey-darkest
+          md:w-10
+          w-full
+        "
+      >
+        <h1 class="font-semibold tracking-tight">Logo</h1>
+      </div>
+
       <div>
-        <ul class="menu flex justify-end list-reset m-0 w-full md:w-auto">
-          <li>
-            <nuxt-link
-              to="/"
-              class="block md:inline-block px-2 py-3 no-underline"
-              ><i class="fa fa-university" aria-hidden="true"></i>
-            </nuxt-link>
-          </li>
-          <li>
-            <nuxt-link
-              to="/"
-              class="block md:inline-block px-2 py-3 no-underline"
-              >CUPS</nuxt-link
-            >
-          </li>
+        <div class="flex flex-col">
+          <ul class="menu flex justify-end list-reset m-0 w-full md:w-auto">
+            <li>
+              <nuxt-link
+                to="/"
+                class="block md:inline-block px-2 py-3 no-underline"
+                ><i class="fa fa-university" aria-hidden="true"></i>
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link
+                to="/"
+                class="block md:inline-block px-2 py-3 no-underline"
+                >CUPS</nuxt-link
+              >
+            </li>
 
-          <li>
-            <nuxt-link
-              to=""
-              class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
-              >SPOONS</nuxt-link
-            >
-          </li>
+            <li>
+              <nuxt-link
+                to=""
+                class="
+                  block
+                  md:inline-block
+                  px-2
+                  py-3
+                  no-underline
+                  text-grey-darkest
+                "
+                >SPOONS</nuxt-link
+              >
+            </li>
 
-          <li>
-            <nuxt-link
-              to=""
-              class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
-              >LIDS</nuxt-link
-            >
-          </li>
-          <li>
-            <nuxt-link
-              to=""
-              class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
-              >ACCESSORS</nuxt-link
-            >
-          </li>
-          <li>
-            <nuxt-link
-              to=""
-              class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
-              >MARKETING</nuxt-link
-            >
-          </li>
-        </ul>
+            <li>
+              <nuxt-link
+                to=""
+                class="
+                  block
+                  md:inline-block
+                  px-2
+                  py-3
+                  no-underline
+                  text-grey-darkest
+                "
+                >LIDS</nuxt-link
+              >
+            </li>
+            <li>
+              <nuxt-link
+                to=""
+                class="
+                  block
+                  md:inline-block
+                  px-2
+                  py-3
+                  no-underline
+                  text-grey-darkest
+                "
+                >ACCESSORS</nuxt-link
+              >
+            </li>
+            <li>
+              <nuxt-link
+                to=""
+                class="
+                  block
+                  md:inline-block
+                  px-2
+                  py-3
+                  no-underline
+                  text-grey-darkest
+                "
+                >MARKETING</nuxt-link
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

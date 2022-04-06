@@ -1,7 +1,16 @@
 <template>
   <div class="bg-gray-100">
     <div
-      class="container mx-auto py-20 text-gray-800 sm:grid md:grid-cols-5 sm:grid-cols-2"
+      class="
+        container
+        mx-4
+        md:mx-auto
+        py-20
+        text-gray-800
+        sm:grid
+        md:grid-cols-5
+        sm:grid-cols-2
+      "
     >
       <div><h3 class="font-bold text-xl mb-5 text-cyan-500">Logo</h3></div>
       <div>
@@ -39,10 +48,32 @@
         <p class="uppercase">Get Our Newsletter</p>
         <input
           type="text"
-          class="relative outline-none rounded py-2 px-3 my-3 bg-white shadow text-sm text-gray-700 placeholder-gray-400 focus:outline-none focus:shadow-outline"
+          class="
+            relative
+            outline-none
+            rounded
+            py-2
+            px-3
+            my-3
+            bg-white
+            shadow
+            text-sm text-gray-700
+            placeholder-gray-400
+            focus:outline-none focus:shadow-outline
+          "
         />
         <button
-          class="rounded uppercase bg-blue-500 hover:bg-blue-700 text-lg px-5 text-white font-medium block"
+          class="
+            rounded
+            uppercase
+            bg-blue-500
+            hover:bg-blue-700
+            text-lg
+            px-5
+            text-white
+            font-medium
+            block
+          "
         >
           Sign Up
         </button>
