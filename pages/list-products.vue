@@ -2,9 +2,23 @@
   <div class="container mx-auto">
     <Breadcrumbs title="Category Name" />
     <div
-      class="h-48 flex justify-center content-center text-right mx-2 text-white rounded-md mb-5"
+      class="
+        h-48
+        flex
+        justify-center
+        content-center
+        text-right
+        mx-2
+        text-white
+        rounded-md
+        mb-5
+      "
       :style="{
-        backgroundImage: `url('https://picsum.photos/600/100/?random');background-size:cover;background-repeat: no-repeat;background-position: center;`,
+        backgroundImage: `url('https://picsum.photos/600/100/?random')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        height: '300px',
       }"
     ></div>
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto my-5 mx-3 md:mx-0">
+  <div class="max-w-7xl mx-auto my-5 mx-3 md:mx-0 px-2">
     <div class="flex items-center space-x-2 text-gray-400 text-sm">
       <a href="#" class="hover:underline hover:text-gray-600">Home</a>
       <span>

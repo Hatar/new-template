@@ -1,107 +1,113 @@
 <template>
   <div class="container mx-auto">
     <Breadcrumbs title="Product Name" />
-    <div class="py-6">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-6">
+    <div class="py-6 px-2">
+      <div class="max-w-7xl px-4 sm:px-6 lg:px-8 mt-6">
         <div class="flex flex-col md:flex-row -mx-4">
-          <div class="md:flex-1 px-4">
-            <div x-data="{ image: 1 }" x-cloak>
-              <!-- <div class="h-64 md:h-80 rounded-lg bg-gray-100 mb-4">
-                  <div
-                    x-show="image === 1"
-                    class="
-                      h-64
-                      md:h-80
-                      rounded-lg
-                      bg-gray-100
-                      mb-4
-                      flex
-                      items-center
-                      justify-center
-                    "
-                  >
-                    <span class="text-5xl">1</span>
-                  </div>
-
-                  <div
-                    x-show="image === 2"
-                    class="
-                      h-64
-                      md:h-80
-                      rounded-lg
-                      bg-gray-100
-                      mb-4
-                      flex
-                      items-center
-                      justify-center
-                    "
-                  >
-                    <span class="text-5xl">2</span>
-                  </div>
-
-                  <div
-                    x-show="image === 3"
-                    class="
-                      h-64
-                      md:h-80
-                      rounded-lg
-                      bg-gray-100
-                      mb-4
-                      flex
-                      items-center
-                      justify-center
-                    "
-                  >
-                    <span class="text-5xl">3</span>
-                  </div>
-
-                  <div
-                    x-show="image === 4"
-                    class="
-                      h-64
-                      md:h-80
-                      rounded-lg
-                      bg-gray-100
-                      mb-4
-                      flex
-                      items-center
-                      justify-center
-                    "
-                  >
-                    <span class="text-5xl">4</span>
-                  </div>
-                </div> -->
-
-              <!-- <div class="flex -mx-2 mb-4">
-                  <template x-for="i in 4">
-                    <div class="flex-1 px-2">
-                      <button
-                        x-on:click="image = i"
-                        :class="{
-                          'ring-2 ring-indigo-300 ring-inset': image === i,
-                        }"
-                        class="
-                          focus:outline-none
-                          w-full
-                          rounded-lg
-                          h-24
-                          md:h-32
-                          bg-gray-100
-                          flex
-                          items-center
-                          justify-center
-                        "
-                      >
-                        <span x-text="i" class="text-2xl"></span>
-                      </button>
-                    </div>
-                  </template>
-                </div> -->
+          <div class="md:flex-1">
+            <div
+              class="
+                h-80
+                bg-slate-300
+                w-full
+                rounded
+                flex
+                justify-center
+                items-center
+                bg-color
+              "
+            >
+              <span
+                class="font-semibold text-2xl mx-3 md:mx-0 mb-4 text-cyan-700"
+                id="gallery"
+                >1</span
+              >
+            </div>
+            <div class="flex flex-wrap justify-between my-5 w-96 md:w-auto">
+              <div
+                class="
+                  rounded
+                  w-20
+                  md:w-32
+                  h-20
+                  md:h-32
+                  bg-color
+                  flex
+                  justify-center
+                  items-center
+                  cursor-pointer
+                "
+                data-id="1"
+                @click="switchBackground"
+              >
+                1
+              </div>
+              <div
+                class="
+                  rounded
+                  w-20
+                  md:w-32
+                  h-20
+                  md:h-32
+                  bg-color
+                  flex
+                  justify-center
+                  items-center
+                  cursor-pointer
+                "
+                data-id="2"
+                @click="switchBackground"
+              >
+                2
+              </div>
+              <div
+                class="
+                  rounded
+                  w-20
+                  md:w-32
+                  h-20
+                  md:h-32
+                  bg-color
+                  flex
+                  justify-center
+                  items-center
+                  cursor-pointer
+                "
+                data-id="3"
+                @click="switchBackground"
+              >
+                3
+              </div>
+              <div
+                class="
+                  rounded
+                  w-20
+                  md:w-32
+                  h-20
+                  md:h-32
+                  bg-color
+                  flex
+                  justify-center
+                  items-center
+                  cursor-pointer
+                "
+                data-id="4"
+                @click="switchBackground"
+              >
+                4
+              </div>
             </div>
           </div>
           <div class="md:flex-1 px-4 section-h">
             <h2
-              class="mb-2 leading-tight tracking-tight font-bold text-gray-800 text-2xl md:text-3xl"
+              class="
+                mb-2
+                leading-tight
+                tracking-tight
+                font-bold
+                text-gray-800 text-2xl
+                md:text-3xl
+              "
             >
               {{ getSingleProduct.infoProduct.title }}
             </h2>
@@ -121,13 +127,29 @@
                     Possimus, eius.
                   </p>
                   <div
-                    class="flex flex-col justify-center align-center bg-red-500 py-4 text-center block"
+                    class="
+                      flex flex-col
+                      justify-center
+                      align-center
+                      bg-red-500
+                      py-4
+                      text-center
+                      block
+                    "
                   >
                     <h2 class="text-lg font-normal tracking-wide">
                       Lorem ipsum dolor sit amet.
                     </h2>
                     <button
-                      class="bg-gray-700 text-white text-lg my-2 py-1 rounded text-white w-32 mx-auto"
+                      class="
+                        bg-gray-700
+                        text-white text-lg
+                        my-2
+                        py-1
+                        rounded
+                        w-32
+                        mx-auto
+                      "
                     >
                       Learn More
                     </button>
@@ -160,7 +182,18 @@
                     <li class="flex justify-between items-center my-2">
                       <div>Color :</div>
                       <select
-                        class="cursor-pointer appearance-none rounded-xl border border-gray-200 w-10 text-center h-10 flex items-end pb-1"
+                        class="
+                          cursor-pointer
+                          appearance-none
+                          rounded-xl
+                          border border-gray-200
+                          w-10
+                          text-center
+                          h-10
+                          flex
+                          items-end
+                          pb-1
+                        "
                       >
                         <option>1</option>
                         <option>2</option>
@@ -170,7 +203,18 @@
                       </select>
                     </li>
                     <button
-                      class="bg-blue-500 hover:bg-blue-700 text-lg py-1 px-5 mb-2 text-white font-bold rounded block"
+                      class="
+                        bg-blue-500
+                        hover:bg-blue-700
+                        text-lg
+                        py-1
+                        px-5
+                        mb-2
+                        text-white
+                        font-bold
+                        rounded
+                        block
+                      "
                     >
                       ADD TO CART
                     </button>
@@ -197,6 +241,12 @@
 <script>
 import { mapGetters } from "vuex";
 export default {
+  methods: {
+    switchBackground(e) {
+      let valueDiv = e.target.attributes["data-id"].nodeValue;
+      document.querySelector("#gallery").innerHTML = valueDiv;
+    },
+  },
   computed: {
     getSingleProduct() {
       return this.$store.getters.getProducts.find(
@@ -218,5 +268,8 @@ export default {
   .section-product {
     margin-top: 80px;
   }
+}
+.bg-color {
+  background-color: rgb(228 228 231);
 }
 </style>

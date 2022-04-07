@@ -21,9 +21,24 @@
       class="nav flex flex-wrap items-center justify-between py-5 p-2 md:p-0"
     >
       <div
-        class="flex flex-no-shrink items-center justify-center py-3 text-grey-darkest md:w-10 w-full"
+        class="
+          flex flex-no-shrink
+          items-center
+          justify-center
+          py-3
+          text-grey-darkest
+          md:w-10
+          w-full
+          blockLogo
+        "
       >
-        <h1 class="font-semibold tracking-tight">Logo</h1>
+        <h1 class="font-semibold tracking-tight">
+          <img
+            src="../static/image/donwloadlogo-removebg-preview.png"
+            class="logo"
+            alt=""
+          />
+        </h1>
       </div>
 
       <div>
@@ -47,7 +62,14 @@
             <li>
               <nuxt-link
                 to=""
-                class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
+                class="
+                  block
+                  md:inline-block
+                  px-2
+                  py-3
+                  no-underline
+                  text-grey-darkest
+                "
                 >SPOONS</nuxt-link
               >
             </li>
@@ -55,21 +77,42 @@
             <li>
               <nuxt-link
                 to=""
-                class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
+                class="
+                  block
+                  md:inline-block
+                  px-2
+                  py-3
+                  no-underline
+                  text-grey-darkest
+                "
                 >LIDS</nuxt-link
               >
             </li>
             <li>
               <nuxt-link
                 to=""
-                class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
+                class="
+                  block
+                  md:inline-block
+                  px-2
+                  py-3
+                  no-underline
+                  text-grey-darkest
+                "
                 >ACCESSORS</nuxt-link
               >
             </li>
             <li>
               <nuxt-link
                 to=""
-                class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
+                class="
+                  block
+                  md:inline-block
+                  px-2
+                  py-3
+                  no-underline
+                  text-grey-darkest
+                "
                 >MARKETING</nuxt-link
               >
             </li>
@@ -82,3 +125,9 @@
 <script>
 export default {};
 </script>
+
+<style scoped>
+.blockLogo {
+  width: 300px !important;
+}
+</style>

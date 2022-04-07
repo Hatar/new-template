@@ -20,21 +20,21 @@ export default {
           title: "Le Lorem Ipsum est simplement du faux",
           decription:
             "Le lorem ipsum est, en imprimerie, une suite de mots sans ise en page,",
-          image: "https://random.imagecdn.app/500/150",
+          image: require("../static/image/slider1.jpg"),
         },
         {
           id: 2,
           title: "quand un imprimeur anonyme assembla",
           decription:
             "Le lorem ipsum est, en imprimerie, une suite de mots sans ise en page,",
-          image: "https://random.imagecdn.app/500/150",
+          image: require("../static/image/slider2.jpg"),
         },
         {
           id: 3,
           title: "bureautique informatique, sans que son contenu",
           decription:
             "Le lorem ipsum est, en imprimerie, une suite de mots sans ise en page,",
-          image: "https://random.imagecdn.app/500/150",
+          image: require("../static/image/slider4.jpeg"),
         },
       ],
       cardItems: [
