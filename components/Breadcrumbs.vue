@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-7xl mx-auto my-5">
+  <div class="max-w-7xl mx-auto my-5 mx-3 md:mx-0">
     <div class="flex items-center space-x-2 text-gray-400 text-sm">
       <a href="#" class="hover:underline hover:text-gray-600">Home</a>
       <span>
@@ -18,7 +18,13 @@
           />
         </svg>
       </span>
-      <a href="#" class="hover:underline hover:text-gray-600">Category Name</a>
+
+      <a
+        href="#"
+        class="hover:underline hover:text-gray-600"
+        v-if="['checkout-id', 'list-products'].includes($route.name)"
+        >Category Name</a
+      >
       <span>
         <svg
           class="h-5 w-5 leading-none text-gray-300"
@@ -35,7 +41,12 @@
           />
         </svg>
       </span>
-      <span>Product Name</span>
+      <a
+        href="#"
+        class="hover:underline hover:text-gray-600"
+        v-if="$route.name === 'checkout-id'"
+        >Product Name</a
+      >
     </div>
   </div>
 </template>
@@ -44,5 +55,4 @@
 export default {};
 </script>
 
-<style>
-</style>
+<style></style>

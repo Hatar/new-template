@@ -4,7 +4,7 @@
       <div
         v-for="(card, index) in cardItems"
         :key="index"
-        class="my-3 px-1 w-full md:w-1/2 lg:my-0 lg:px-4 lg:w-1/3"
+        class="sm:my-2 my-3 px-1 w-full md:w-1/2 lg:my-0 lg:px-4 lg:w-1/3"
       >
         <nuxt-link :to="`/checkout/${card.id}`">
           <article class="overflow-hidden rounded-lg shadow-lg">
@@ -33,14 +33,7 @@
               v-if="card.infoProduct"
             >
               <button
-                class="
-                  bg-blue-500
-                  hover:bg-blue-700
-                  text-lg
-                  py-1
-                  px-5
-                  text-white
-                "
+                class="bg-blue-500 hover:bg-blue-700 text-lg py-1 px-5 text-white"
               >
                 {{ card.infoProduct.titleButton }}
               </button>

@@ -21,22 +21,14 @@
       class="nav flex flex-wrap items-center justify-between py-5 p-2 md:p-0"
     >
       <div
-        class="
-          flex flex-no-shrink
-          items-center
-          justify-center
-          py-3
-          text-grey-darkest
-          md:w-10
-          w-full
-        "
+        class="flex flex-no-shrink items-center justify-center py-3 text-grey-darkest md:w-10 w-full"
       >
         <h1 class="font-semibold tracking-tight">Logo</h1>
       </div>
 
       <div>
         <div class="flex flex-col">
-          <ul class="menu flex justify-end list-reset m-0 w-full md:w-auto">
+          <ul class="menu flex justify-end list-reset m-0 w-96 md:w-auto">
             <li>
               <nuxt-link
                 to="/"
@@ -55,14 +47,7 @@
             <li>
               <nuxt-link
                 to=""
-                class="
-                  block
-                  md:inline-block
-                  px-2
-                  py-3
-                  no-underline
-                  text-grey-darkest
-                "
+                class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
                 >SPOONS</nuxt-link
               >
             </li>
@@ -70,42 +55,21 @@
             <li>
               <nuxt-link
                 to=""
-                class="
-                  block
-                  md:inline-block
-                  px-2
-                  py-3
-                  no-underline
-                  text-grey-darkest
-                "
+                class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
                 >LIDS</nuxt-link
               >
             </li>
             <li>
               <nuxt-link
                 to=""
-                class="
-                  block
-                  md:inline-block
-                  px-2
-                  py-3
-                  no-underline
-                  text-grey-darkest
-                "
+                class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
                 >ACCESSORS</nuxt-link
               >
             </li>
             <li>
               <nuxt-link
                 to=""
-                class="
-                  block
-                  md:inline-block
-                  px-2
-                  py-3
-                  no-underline
-                  text-grey-darkest
-                "
+                class="block md:inline-block px-2 py-3 no-underline text-grey-darkest"
                 >MARKETING</nuxt-link
               >
             </li>

@@ -1,15 +1,16 @@
 <template>
   <div>
     <h3
-      class="text-center font-semibold text-3xl text-cyan-700"
+      class="font-semibold text-2xl mx-3 md:mx-0 mb-4 text-cyan-700"
+      :class="{ 'text-center': $route.name !== 'checkout-id' }"
       v-if="title !== ''"
     >
       {{ title }}
     </h3>
     <Card :cardItems="sliceProduct" />
     <div
-      class="flex flex-col flex-wrap content-center text-center my-1"
-      v-if="$route.name !== 'list-products'"
+      class="flex flex-col flex-wrap content-center text-center"
+      v-if="!['list-products', 'checkout-id'].includes($route.name)"
     >
       <i class="fa fa-long-arrow-right text-center" aria-hidden="true"></i>
       <nuxt-link to="list-products" class="text-lg py-1 px-5 text-blue">
@@ -34,7 +35,7 @@ export default {
   },
   computed: {
     sliceProduct() {
-      return this.$route.fullPath === "/"
+      return this.$route.fullPath === "/" || this.$route.name === "checkout-id"
         ? this.products.slice(0, 3)
         : this.products;
     },
